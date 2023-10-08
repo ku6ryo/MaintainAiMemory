@@ -1,0 +1,14 @@
+version: "3"
+services:
+  db:
+    image: mysql:8.0.26
+    ports:
+      - 3340:3306
+    environment:
+      - MYSQL_DATABASE=assistant
+      - MYSQL_ROOT_PASSWORD=pass
+  
+  qdrant:
+    image: qdrant/qdrant
+    ports:
+      - "6336:6333"
