@@ -22,10 +22,6 @@ class EnvVarManager {
     return this.getVar("OPENAI_API_KEY")
   }
 
-  slackBotToken() {
-    return this.getVar("SLACK_BOT_TOKEN")
-  }
-
   qdrantUrl() {
     return this.getVar("QDRANT_URL")
   }
